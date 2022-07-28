@@ -60,7 +60,9 @@ class _statefulDenemeState extends State<statefulDeneme> {
 
   void addList(String text) {
      setState(() {
-      liste.add(text);
+       if(text.isNotEmpty){
+            liste.add(text);
+       }
     });
   }
 
